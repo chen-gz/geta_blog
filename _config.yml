@@ -116,7 +116,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://chen-gz.github.io/geta_blog/"
+baseurl: "/geta_blog"
 
 # ------------ The following options are not recommended to be modified ------------------
 
