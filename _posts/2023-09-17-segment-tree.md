@@ -1,3 +1,10 @@
+---
+title: Segment Tree
+date: 2023-09-17
+categories: [Algorithm, SUB_CATEGORIE]
+tags: [algorithm]     # TAG names should always be lowercase
+---
+
 This post is mainly from an old blog
 
 In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it's a structure that cannot be modified once it's built. A similar data structure is the interval tree.
