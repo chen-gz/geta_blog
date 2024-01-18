@@ -1,7 +1,7 @@
 ---
 title: Segment Tree
 date: 2023-09-17
-categories: [Algorithm, SUB_CATEGORIE]
+categories: [Algorithm]
 tags: [algorithm]     # TAG names should always be lowercase
 ---
 
