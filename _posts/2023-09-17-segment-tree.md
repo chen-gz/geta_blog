@@ -3,6 +3,7 @@ title: Segment Tree
 date: 2023-09-17
 categories: [Algorithm]
 tags: [algorithm]     # TAG names should always be lowercase
+math: true
 ---
 
 This post is mainly from an old blog
