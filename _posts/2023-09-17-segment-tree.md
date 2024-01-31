@@ -7,18 +7,16 @@ math: true
 mermaid: true
 ---
 
-This post is mainly from an old blog
-
 In computer science, a segment tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it's a structure that cannot be modified once it's built. A similar data structure is the interval tree.
 
-**Space Complexity**: $$ O(n\log n) $$
+**Space Complexity**: $ O(n\log n) $
 
 **Time Complexity**:
 
-  1. build the tree: $$ O(n \log n) $$
-  2. query: $$ O(\log n) $$
-  3. node update: $$ O(\log n) $$
-  4. segment update with lazy: $$ O(\log n) $$
+  1. build the tree: $ O(n \log n) $
+  2. query: $ O(\log n) $
+  3. node update: $ O(\log n) $
+  4. segment update with lazy: $ O(\log n) $
 
 A segment tree is a binary tree, each node contains information for a segment of the original array. The value in the node segment tree is some attribute of the range. i.e. sum, min, max, gcd, etc.
 
@@ -106,7 +104,7 @@ This update will update recursively from node to root.
 
 ## Update (segment with lazy)
 
-If we want to update a segment of the tree. If we apply node update function. The time complexity will be $$ O(n \log n) $$ this will not be acceptable for most contest. We need lazy stratry to update the tree. Lazy update means the tree does not update untill query happens. You may wonder what is the query time complexity now. Luckly, lazy update will not change the time complexity of query operation. We can still query the segment with time complexity $$ O (\log n) $$.
+If we want to update a segment of the tree. If we apply node update function. The time complexity will be $ O(n \log n) $ this will not be acceptable for most contest. We need lazy stratry to update the tree. Lazy update means the tree does not update untill query happens. You may wonder what is the query time complexity now. Luckly, lazy update will not change the time complexity of query operation. We can still query the segment with time complexity $ O (\log n) $.
 
 
 Pending
@@ -130,7 +128,7 @@ The query aims to get information from the segment tree. A query segment can be 
 
 Problem Set
 
-  1. [Codeforces Round #769 Problem D]()
-  2. [Codeforces Round #771 Problem E]()
-  3. [Codeforces Round #852 Problem F]()
-  4. [Codeforces Round #397 Problem F]()
+  1. [Codeforces Round #769 Problem D](https://codeforces.com/contest/1632/problem/D)
+  2. [Codeforces Round #771 Problem E](https://codeforces.com/contest/1638/problem/E)
+  3. [Codeforces Round #852 Problem F](https://codeforces.com/contest/1793/problem/F)
+  4. [Codeforces Round #397 Problem F](https://codeforces.com/contest/765/problem/F)
