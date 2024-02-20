@@ -28,6 +28,7 @@ Info operator+(const Info &a, const Info &b)
     // ret.right_dist = a.right_dist + b.right_dist;
     return ret;
 }
+
 Info operator-(const Info &a, const Info &b)
 {
     // this functoin define how to update the value to current nodes.
@@ -144,72 +145,4 @@ public:
         Info right_val = lazy_query(root << 1 | 1, mid + 1, r);
         return left_val + right_val;
     }
-    // void push_down(int root)
-    // {
-    //     if (tree[root].left == tree[root].right)
-    //         return;
-    //     if (tree[root].push_down)
-    //     {
-    //         tree[root << 1].val = tree[root << 1].val - tree[root].val;
-    //         tree[root << 1 | 1].val = tree[root].val;
-    //         tree[root << 1].push_down = tree[root << 1 | 1].push_down = true;
-    //         tree[root].push_down = false;
-    //     }
-    // }
 };
-int main()
-{
-    int n;
-    cin >> n;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
-    // segment_tree<int> st(n);
-    // st.build(1, 0, n - 1, arr);
-
-    queue<pair<int, int>> q;
-    for (int i = 0; i < n; i++)
-    {
-        int l = i, r = n - 1;
-        while (l <= r)
-        {
-            int mid = (l + r) / 2;
-            int tmp = st.query(1, i, mid);
-            if (tmp == mid - i + 1)
-            {
-                q.push(make_pair(i, mid));
-                break;
-            }
-            else if (tmp < mid - i + 1)
-            {
-                r = mid - 1;
-            }
-            else
-            {
-                l = mid + 1;
-            }
-        }
-    }
-    int ret = 0;
-    int pos = 0;
-    while (!q.empty())
-    {
-        auto a = q.front();
-        q.pop();
-        while (pos < a.second)
-        {
-            cout << ret << " ";
-            pos++;
-        }
-        ret++;
-        while (!q.empty() && q.front().first <= a.second)
-            q.pop();
-    }
-    while (pos < n)
-    {
-        cout << ret << " ";
-        pos++;
-    }
-
-    return 0;
-}
