@@ -8,7 +8,7 @@ mermaid: true
 ---
 
 
-## Porblem D [Sasha and a Walk in the City] (https://codeforces.com/contest/1929/problem/D)
+## Porblem D [Sasha and a Walk in the City](https://codeforces.com/contest/1929/problem/D)
 
 The statement of this problem is not clear.
 Problem statement from the comment in [tutorial page](https://codeforces.com/blog/entry/125851?#comment-1117492).
