@@ -43,8 +43,31 @@ let $dp[mask]$ be the minimun number of elementes that required to cover the $ma
 The $mask$ can start from 0 then add a number to mask. Then we have $dp_{mask \| 0} = \min(dp_{maks}, dp_0 + 1)$ with $dp_0 = 0$. Then we loop $mask$ from 0 to `(1<<k) - 1`. We will have the finally answer which is $dp[(1<<k)-1]$.
 
 
+## Problem F [Sasha and the Wedding Binary Search Tree](https://codeforces.com/contest/1929/problem/F)
 
+[submission](https://codeforces.com/contest/1929/submission/249185245)
 
+This probelm require quick combination implementation. Refer []() for the Modular combination implementation.
+
+The key idea is get the values of tree sorted, which is left - mid - right order of dfs.
+
+``` cpp
+void dfs(int cur, vector<int> &visited, vector<node> &tree, int &cnt, vector<int> &ret) {
+    // go left
+    if (tree[cur].left != -1) { dfs(tree[cur].left, visited, tree, cnt, ret); }
+    ret[cnt] = tree[cur].val;
+    cnt++;
+    if (tree[cur].right != -1) { dfs(tree[cur].right, visited, tree, cnt, ret); }
+}
+```
+
+Then the answer can be calculated by 
+
+``` cpp
+int len = right - i;
+int num_val = ret[right] - ret[i - 1] + 1;
+ans *= combination(num_val - 1 + len, len);
+```
 
 
 
