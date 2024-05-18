@@ -40,7 +40,7 @@ The algorithm to solve this equation can be $2^k \cdot 20$
 This probelm can be sovled using dynamic programming. 
 let $dp[mask]$ be the minimun number of elementes that required to cover the $mask$.
 
-The $mask$ can start from 0 then add a number to mask. Then we have $dp_{mask \| 0} = \min(dp_{maks}, dp_0 + 1)$ with $dp_0 = 0$. Then we loop $mask$ from 0 to `(1<<k) - 1`. We will have the finally answer which is $dp[(1< <k)-1]$.
+The $mask$ can start from 0 then add a number to mask. Then we have $dp_{mask \| 0} = \min(dp_{maks}, dp_0 + 1)$ with $dp_0 = 0$. Then we loop $mask$ from 0 to `(1<<k) - 1`. We will have the finally answer which is $dp\left[(1< <k)-1\right]$.
 
 
 ## Problem F [Sasha and the Wedding Binary Search Tree](https://codeforces.com/contest/1929/problem/F)
