@@ -6,33 +6,48 @@ order: 4
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
 <!-- {: .prompt-tip } -->
+Here's a condensed and polished "About Me" section incorporating all the details you provided:
+
+---
 
 ## About Me
 
-Hello and welcome to my blog! I'm Guangzong Chen, currently pursuing a Ph.D. in Electrical and Computer Engineering at the University of Pittsburgh. My academic journey began at the Beijing Institute of Technology, where I earned my B.S. in Automation in 2019.
-<!--
-### Academic Background
+Hello! I'm Guangzong Chen, currently pursuing a Ph.D. in Electrical and Computer Engineering at the University of Pittsburgh. I hold a B.S. in Automation from the Beijing Institute of Technology.
 
-I embarked on my Ph.D. journey in 2019, diving deep into the world of Electrical and Computer Engineering. My research has primarily focused on innovative applications of Generative Adversarial Networks (GANs) and neural networks, especially in the field of food image processing. My work on constrained food image generation and classification has been a thrilling exploration of how technology can intersect with everyday life, making significant strides in automatic dietary assessment and identifying diverse cuisines.
--->
+### Research and Experience
 
-### Research and Projects
+As a Research Assistant at the University of Pittsburgh, I have worked on innovative projects such as:
 
-As a Research Assistant at the University of Pittsburgh since January 2020, I've had the privilege to work on groundbreaking projects. One of my notable projects involves designing a generative model utilizing GANs to manipulate food images, ensuring the preservation of the image shape while altering the food content. This project achieved an impressive mean squared error (MSE) of Intersection over Union (IoU) reaching 93% or higher.
+- **Constrained Food Image Generation:** Developed a generative model using GANs for automatic dietary assessment, achieving over 93% IoU.
+- **Food Image Classification:** Created a system for classifying African food images with 90% accuracy using probabilistic inference, SVM, and neural networks.
+- **Neural Network Analysis:** Investigated framelet-based mathematical methods for enhanced explainability in AI.
 
-In another exciting project, I developed a food image classification system tailored for small and uncommon food images from Africa. By leveraging probabilistic inference, SVM, and neural networks, I achieved a 90% accuracy in classification, showcasing the system's capability to effectively identify African cuisines.
+During my internship at Nimbus Robotics, I contributed to:
 
-My research also delves into the realm of Explainable AI through framelet-based mathematical methods to analyze neural network models. This work aims to provide deeper insights into the mechanisms of neural networks, enabling the design of simpler networks with the same functionality as larger ones.
+- **Motor Controller Development:** Designed a motor controller using Field-Oriented Control (FOC) for wearable devices.
+- **Version Control System:** Collaborated on a Git-based system improving workflow efficiency by ~20%.
 
-### Professional Experience
+### Technical Skills
 
-In addition to my academic pursuits, I gained valuable industry experience as a Software Engineer Intern at Nimbus Robotics. During my internship from April 2020 to August 2020, I worked on the full software development lifecycle, focusing on designing scalable systems, writing high-quality code, and ensuring thorough testing and validation. One of my key contributions was collaborating on the design and development of a Git-based version control system to support concurrent hardware driver development, improving workflow efficiency by approximately 20%.
+- **Programming Languages:** C/C++, Python, MATLAB, Rust
+- **Specialties:** Embedded Systems, Algorithms, RTOS, Circuit Design, Communication Protocols (I2C, SPI, UART, USB, eMMC)
 
-### Personal Interests
+### Publications
 
-When I'm not immersed in research or coding, I enjoy [mention any hobbies or interests you have, e.g., hiking, reading, cooking, etc.]. These activities help me stay balanced and inspired, fueling my creativity and passion for technology.
+- "Shape-Preserving Generation of Food Images for Automatic Dietary Assessment," CVPR, 2024.
+- “Image-based volume estimation for food in a bowl,” Journal of Food Engineering, Jul. 2024.
+- “Improved Wearable Devices for Dietary Assessment Using a New Camera System,” Sensors, Oct. 2022.
+- “Food/Non-Food Classification of Real-Life Egocentric Images in Low- and Middle-Income Countries Based on Image Tagging Features,” Frontiers in Artificial Intelligence, Apr. 2021.
 
-Thank you for visiting my blog! I'm excited to share my journey, insights, and projects with you. Feel free to reach out if you have any questions or just want to connect!
+### Personal Projects
 
+- **Serial Communication Tool:** Developed a tool using Rust for USART communication with superior stability and speed.
+- **STM32 HAL Development:** Designed a user-friendly hardware abstraction layer in Rust for motor controllers.
+
+Thank you for visiting my blog! Feel free to reach out if you have any questions or want to connect.
+
+---
+
+This version is concise, focusing on key points and making it easy to read and engaging for your audience.
 
 
