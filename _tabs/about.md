@@ -6,9 +6,6 @@ order: 4
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
 <!-- {: .prompt-tip } -->
-Here's a condensed and polished "About Me" section incorporating all the details you provided:
-
----
 
 ## About Me
 
@@ -45,9 +42,3 @@ During my internship at Nimbus Robotics, I contributed to:
 - **STM32 HAL Development:** Designed a user-friendly hardware abstraction layer in Rust for motor controllers.
 
 Thank you for visiting my blog! Feel free to reach out if you have any questions or want to connect.
-
----
-
-This version is concise, focusing on key points and making it easy to read and engaging for your audience.
-
-
